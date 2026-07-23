@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "SimSun", "宋体", serif;
+}
+body {
+    background-color: #f8f3e6;
+    background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M50 50 L60 60 M40 40 L30 30' stroke='%23d4c8b0' stroke-width='0.5'/%3E%3C/svg%3E");
+    color: #5c2c17;
+}
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+.title-box {
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 2px solid #b8864a;
+    margin-bottom: 30px;
+}
+.title-box h1 {
+    font-size: 32px;
+    color: #912c18;
+    letter-spacing: 4px;
+}
+.title-box p {
+    margin-top: 8px;
+    font-size: 16px;
+    color: #804c2c;
+}
+.tab-btn-group {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+.tab-btn {
+    padding: 10px 22px;
+    border: 1px solid #b8864a;
+    background: transparent;
+    color: #70381c;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.tab-btn.active {
+    background-color: #912c18;
+    color: #fff;
+    border-color: #912c18;
+}
+.tab-content {
+    display: none;
+    background: #fffdf8;
+    border: 1px solid #e0c8a8;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px #ddcdb4;
+}
+.tab-content.active {
+    display: block;
+}
+.sign-box, .input-box {
+    text-align: center;
+}
+#sign-text {
+    font-size: 18px;
+    line-height: 2;
+    min-height: 120px;
+    margin-bottom: 25px;
+}
+input {
+    width: 100%;
+    max-width: 400px;
+    padding: 12px 16px;
+    border: 1px solid #d4b894;
+    border-radius: 6px;
+    font-size: 16px;
+    background: #fff;
+    margin-bottom: 20px;
+}
+.main-btn {
+    padding: 12px 36px;
+    background-color: #912c18;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: opacity 0.25s;
+}
+.main-btn:hover {
+    opacity: 0.85;
+}
+.result-text {
+    margin-top: 24px;
+    font-size: 17px;
+    line-height: 1.8;
+    color: #602e1a;
+    padding: 15px;
+    border: 1px dashed #d4b894;
+    border-radius: 8px;
+    text-align: left;
+}
+footer {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 14px;
+    color: #997755;
+}
