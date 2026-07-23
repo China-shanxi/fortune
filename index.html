@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>古风灵签算命馆</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="title-box">
+            <h1>古法灵签算命馆</h1>
+            <p>静心求签，预知福祸</p>
+        </header>
+
+        <!-- 功能切换按钮（新增八字五行按钮） -->
+        <div class="tab-btn-group">
+            <button class="tab-btn active" data-tab="qian">灵签抽签</button>
+            <button class="tab-btn" data-tab="love">姻缘测算</button>
+            <button class="tab-btn" data-tab="career">事业财运</button>
+            <!-- 新增八字五行测算按钮 -->
+            <button class="tab-btn" data-tab="bazi">八字五行测算</button>
+        </div>
+
+        <!-- 1.灵签抽签模块（原有不变） -->
+        <div class="tab-content active" id="qian">
+            <div class="sign-box">
+                <div id="sign-text">
+                    <p>诚心默念心事，点击下方摇签筒</p>
+                </div>
+                <button id="shake-btn" class="main-btn">摇签求卦</button>
+            </div>
+        </div>
+
+        <!-- 2.姻缘测算模块（原有不变） -->
+        <div class="tab-content" id="love">
+            <div class="input-box">
+                <input type="text" id="love-name" placeholder="输入姓名测算姻缘">
+                <button class="main-btn calc-btn">测算姻缘运势</button>
+                <div class="result-text"></div>
+            </div>
+        </div>
+
+        <!-- 3.事业财运模块（原有不变） -->
+        <div class="tab-content" id="career">
+            <div class="input-box">
+                <input type="text" id="career-name" placeholder="输入姓名测算事业财运">
+                <button class="main-btn calc-btn">测算事业财运</button>
+                <div class="result-text"></div>
+            </div>
+        </div>
+
+        <!-- 4.全新：八字五行测算模块 -->
+        <div class="tab-content" id="bazi">
+            <div class="input-box">
+                <div style="margin-bottom:15px;text-align:left;">
+                    <p>请填写公历出生时间测算八字五行（仅娱乐）</p>
+                </div>
+                <!-- 出生年月日时输入框 -->
+                <div style="display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-bottom:15px;">
+                    <input type="number" id="year" placeholder="出生年份" min="1900" max="2030">
+                    <input type="number" id="month" placeholder="月份1-12" min="1" max="12">
+                    <input type="number" id="day" placeholder="日期1-31" min="1" max="31">
+                    <input type="number" id="hour" placeholder="时辰0-23" min="0" max="23">
+                </div>
+                <button class="main-btn calc-btn" id="baziCalc">测算八字五行</button>
+                <!-- 八字测算结果输出区域 -->
+                <div class="result-text" id="baziResult"></div>
+            </div>
+        </div>
+
+        <footer>
+            <p>仅供娱乐，命运掌握在自己手中</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
